@@ -12,6 +12,11 @@ def test_divide():
     assert result == 1
 
 
+def test_add_strings():
+    result = my_functions.add("i like", " football.")
+    assert result == "i like football."
+
+
 def test_divide_by_zero():
     with pytest.raises(ValueError):
         my_functions.divide(10, 0)
